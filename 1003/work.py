@@ -17,7 +17,6 @@ def reduce_matrix_mean(matrix,stride):
 input_filename = 'random_matrix.csv'
 random_matrix = import_random_matrix(input_filename)
 
-
 stride = 3
 reduce_matrix_max = reduce_matrix_max(random_matrix,stride)
 pd.DataFrame(reduce_matrix_max).to_csv('reduce_matrix_maxpooling.csv',header=None,index=None)
