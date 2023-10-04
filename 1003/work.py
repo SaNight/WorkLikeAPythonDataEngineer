@@ -12,7 +12,7 @@ def reduce_matrix_max(matrix,stride):
 
 def reduce_matrix_mean(matrix,stride):
     temp_matrix = skimage.measure.block_reduce(matrix,stride,np.mean)
-    return skimage.measure.block_reduce(matrix,stride,np.mean)
+    return skimage.measure.block_reduce(temp_matrix,stride,np.mean)
 
 input_filename = 'random_matrix.csv'
 random_matrix = import_random_matrix(input_filename)
